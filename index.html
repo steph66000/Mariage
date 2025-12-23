@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Accès protégé</title>
+</head>
+<body>
+
+<h2>Entrez les 3 mots de passe</h2>
+
+<input type="password" id="p1" placeholder="Mot de passe 1"><br><br>
+<input type="password" id="p2" placeholder="Mot de passe 2"><br><br>
+<input type="password" id="p3" placeholder="Mot de passe 3"><br><br>
+
+<button onclick="verifier()">Valider</button>
+
+<p id="resultat"></p>
+
+<script>
+function verifier() {
+  const mp1 = "trois";
+  const mp2 = "juillet";
+  const mp3 = "2027";
+
+  const i1 = document.getElementById("p1").value;
+  const i2 = document.getElementById("p2").value;
+  const i3 = document.getElementById("p3").value;
+
+  if (i1 === mp1 && i2 === mp2 && i3 === mp3) {
+    document.getElementById("resultat").innerHTML =
+      '<a href="https://www.mariages.net/web/marion-and-clement-2027-07-03">Clique ici pour accéder au lien</a>';
+  } else {
+    document.getElementById("resultat").textContent =
+      "Mots de passe incorrects ";
+  }
+}
+</script>
+
+</body>
+</html>

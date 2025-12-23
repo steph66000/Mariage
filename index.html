@@ -5,6 +5,16 @@
   <title>Accès protégé</title>
 </head>
 <body>
+    <meta charset="UTF-8">
+    <title>Arrière-plan</title>
+    <style>
+        body {
+            background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.touteleurope.eu%2Fwp-content%2Fuploads%2F2020%2F12%2Ftraditions-noel-europe.jpg&f=1&nofb=1&ipt=e4ce85fd97a82a320ee7452d45d672ffc5c42782c6928644f2e05108941da240");
+            background-size: cover;      /* l’image couvre toute la page */
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
 
 <h2>Entrez les 3 mots de passe</h2>
 
@@ -31,7 +41,7 @@ function verifier() {
       '<a href="https://www.mariages.net/web/marion-and-clement-2027-07-03">Clique ici pour accéder au lien</a>';
   } else {
     document.getElementById("resultat").textContent =
-      "Mots de passe incorrects ";
+      "Mots de passe incorrects ❌";
   }
 }
 </script>
